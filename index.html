@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
   
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
   
@@ -80,7 +83,7 @@
           <div class="hero-content">
             
             <!-- 1. Status Badge -->
-            <div class="hero-badge-wrap">
+            <div class="hero-badge-wrap" data-aos="fade-up">
               <span class="status-badge-live">
                 <span class="status-dot-pulse"></span>
                 <span>Available for New Projects</span>
@@ -88,23 +91,23 @@
             </div>
             
             <!-- 2. Full Name -->
-            <h1 class="hero-name">Arfazzikri Ramadhani</h1>
+            <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">Arfazzikri Ramadhani</h1>
             
             <!-- 3. Primary Role / Title -->
-            <div class="hero-role-title">Industrial Engineering Student | HSE &amp; Operations</div>
+            <div class="hero-role-title" data-aos="fade-up" data-aos-delay="150">Industrial Engineering Student | HSE &amp; Operations</div>
             
             <!-- 4. Core Headline -->
-            <p class="hero-headline">
+            <p class="hero-headline" data-aos="fade-up" data-aos-delay="200">
               Enhancing Operational <span class="highlight">Efficiency &amp; Safety</span> with an Analytical Approach.
             </p>
             
             <!-- 5. Concise Narrative Description -->
-            <p class="hero-description">
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="250">
               Industrial Engineering student with practical experience in Occupational Health &amp; Safety (K3/HSE) and Ergonomics. Combining data-driven analysis (simulation, statistics, facility layout planning) with proven leadership in managing large-scale programs.
             </p>
             
             <!-- 6. Key Skill Badges -->
-            <div class="hero-skill-chips">
+            <div class="hero-skill-chips" data-aos="fade-up" data-aos-delay="300">
               <span class="tech-chip emerald">HSE (K3)</span>
               <span class="tech-chip blue">Data Analytics</span>
               <span class="tech-chip blue">Simulation &amp; Modeling</span>
@@ -112,7 +115,7 @@
             </div>
 
             <!-- 7. CTAs & Social Links -->
-            <div class="hero-action-row">
+            <div class="hero-action-row" data-aos="fade-up" data-aos-delay="350">
               <a href="mailto:arfazzikrir@gmail.com" class="btn btn-primary">
                 <span>Contact Me</span>
                 <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
@@ -137,7 +140,7 @@
           </div>
 
           <!-- Right Column: Proportionate & Compact Profile Card -->
-          <div class="hero-visual">
+          <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
             <div class="hero-card-compact" id="heroCardTilt">
               <div class="hero-photo-frame">
                 <img src="assets/profile.png" alt="Arfazzikri Ramadhani Photo" loading="eager">
@@ -167,7 +170,7 @@
     <section id="about" class="section" style="background: var(--bg-secondary);">
       <div class="container">
         
-        <div class="section-header-wrap">
+        <div class="section-header-wrap" data-aos="fade-up">
           <div class="section-header-left">
             <span class="section-label">
               <i data-lucide="user-check" style="width: 14px; height: 14px;"></i>
@@ -184,7 +187,7 @@
 
         <div class="about-grid">
           <!-- Left Column: Photo Card -->
-          <div class="about-image-column">
+          <div class="about-image-column" data-aos="fade-right" data-aos-delay="100">
             <div class="about-image-card">
               <div class="about-image-frame">
                 <img src="assets/profile.png" alt="Arfazzikri Ramadhani Photo" class="about-profile-img" loading="lazy">
@@ -200,7 +203,7 @@
           </div>
 
           <!-- Right Column: Narrative & Stats -->
-          <div class="about-content-column">
+          <div class="about-content-column" data-aos="fade-left" data-aos-delay="200">
             <div class="about-narrative">
               <p>
                 Hello! I am an <strong>Industrial Engineering Student</strong> with practical experience in <strong>Occupational Health &amp; Safety (K3/HSE)</strong>, <strong>Operations Research</strong>, and <strong>Ergonomics</strong>.
@@ -214,19 +217,19 @@
             </div>
 
             <div class="about-stats-grid">
-              <div class="stat-card">
+              <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="stat-number">PGE<span class="plus">✦</span></div>
                 <div class="stat-label">Pertamina Geothermal Energy HSE Intern</div>
               </div>
-              <div class="stat-card">
+              <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="stat-number">500<span class="plus">+</span></div>
                 <div class="stat-label">Legislative Documents Cataloged &amp; Archived</div>
               </div>
-              <div class="stat-card">
+              <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="stat-number">50<span class="plus">+</span></div>
                 <div class="stat-label">Children Impacted in SATURN Program</div>
               </div>
-              <div class="stat-card">
+              <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="stat-number">1<span class="plus">st</span></div>
                 <div class="stat-label">PROFISIENSI Journal Published Research</div>
               </div>
@@ -238,12 +241,12 @@
     </section>
 
     <!-- ==========================================================================
-         5. SECTION "SIGNATURE TOOLS" (FOCUSED ARSENAL)
+         5. SECTION "SIGNATURE TOOLS"
          ========================================================================== -->
     <section id="tools" class="section">
       <div class="container">
         
-        <div class="section-header-wrap">
+        <div class="section-header-wrap" data-aos="fade-up">
           <div class="section-header-left">
             <span class="section-label">
               <i data-lucide="cpu" style="width: 14px; height: 14px;"></i>
@@ -261,10 +264,9 @@
         <div class="tools-grid">
           
           <!-- Tool 1: AutoCAD -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="50">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- Official AutoCAD Red/White SVG -->
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2L2 22H6.5L8.5 17.5H15.5L17.5 22H22L12 2ZM12 8.5L14.2 14H9.8L12 8.5Z" fill="#E51010"/>
                 </svg>
@@ -278,10 +280,9 @@
           </div>
 
           <!-- Tool 2: AnyLogic -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- AnyLogic Official Simulation Icon -->
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="3" y="3" width="18" height="18" rx="4" fill="#007ACC" fill-opacity="0.12" stroke="#007ACC" stroke-width="2"/>
                   <circle cx="12" cy="12" r="4" fill="#007ACC"/>
@@ -297,10 +298,9 @@
           </div>
 
           <!-- Tool 3: SmartPLS -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="150">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- SmartPLS SEM Logo -->
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="24" height="24" rx="5" fill="#F59E0B" fill-opacity="0.15"/>
                   <path d="M5 18L10 12L14 15L19 7" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -316,10 +316,9 @@
           </div>
 
           <!-- Tool 4: Microsoft Excel & VBA -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="200">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- Official Excel Green SVG -->
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" fill="#107C41" fill-opacity="0.12" stroke="#107C41" stroke-width="1.8"/>
                   <path d="M14 2V8H20" fill="#107C41" fill-opacity="0.25"/>
@@ -335,10 +334,9 @@
           </div>
 
           <!-- Tool 5: Microsoft Project -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="250">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- MS Project Green SVG -->
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="24" height="24" rx="5" fill="#31752F" fill-opacity="0.12"/>
                   <rect x="5" y="7" width="14" height="3" rx="1.5" fill="#31752F"/>
@@ -355,10 +353,9 @@
           </div>
 
           <!-- Tool 6: Notion -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="300">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- Official Notion SVG -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="#1E293B">
                   <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.047-.327L17.817 1.83c-.466-.374-.933-.56-1.68-.467L3.992 2.62c-.373.047-.466.233-.326.374l.793 1.214zm.84 3.034v13.535c0 .747.373 1.027 1.213.98l14.15-.84c.84-.046.933-.56.933-1.12V6.261c0-.56-.233-.746-.746-.7l-14.804.887c-.56.046-.746.326-.746.793zm13.447.887c.093.42 0 .84-.42.887l-.7.14v10.126c-.56.327-1.167.514-1.68.514-.84 0-1.074-.28-1.727-1.073l-4.992-7.84v7.746l1.353.327c.094.42 0 .84-.42.887l-3.873.233c-.093-.42 0-.84.42-.887l.933-.233V8.874l-1.26-.093c-.093-.42 0-.84.42-.887l3.966-.233 5.319 8.167V8.547l-1.167-.14c-.093-.42 0-.84.42-.887l3.407-.233z"/>
                 </svg>
@@ -372,10 +369,9 @@
           </div>
 
           <!-- Tool 7: BowTie & HIRADC -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="350">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- Safety Shield Tool Icon -->
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 22S4 18 4 12V5L12 2L20 5V12C20 18 12 22 12 22Z" fill="#10B981" fill-opacity="0.15" stroke="#059669" stroke-width="2"/>
                   <path d="M9 12L11 14L15 10" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -390,10 +386,9 @@
           </div>
 
           <!-- Tool 8: Antigravity -->
-          <div class="tool-card">
+          <div class="tool-card" data-aos="fade-up" data-aos-delay="400">
             <div class="tool-header">
               <div class="tool-logo-box">
-                <!-- Official Google Antigravity Logo -->
                 <img src="assets/antigravity-logo.png" alt="Antigravity Logo" style="width: 32px; height: 32px; object-fit: contain;">
               </div>
               <span class="tool-badge">Agentic Workflow</span>
@@ -414,7 +409,7 @@
     <section id="experience" class="section" style="background: var(--bg-secondary);">
       <div class="container">
         
-        <div class="section-header-wrap">
+        <div class="section-header-wrap" data-aos="fade-up">
           <div class="section-header-left">
             <span class="section-label">
               <i data-lucide="shield" style="width: 14px; height: 14px;"></i>
@@ -434,12 +429,11 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             
-            <div class="timeline-card">
+            <div class="timeline-card" data-aos="fade-up" data-aos-delay="100">
               
               <div class="timeline-header">
                 <div class="timeline-brand-wrap">
                   <div class="company-logo-avatar">
-                    <!-- Official Pertamina Geothermal Energy Logo -->
                     <img src="assets/pertamina-logo.jpg" alt="PT Pertamina Geothermal Energy Tbk Logo">
                   </div>
                   <div>
@@ -465,7 +459,7 @@
                 <div class="exp-gallery-grid">
                   
                   <!-- Photo 1: User Photo in front of Pertamina Geothermal Energy Wall Branding -->
-                  <div class="exp-photo-slot open-lightbox-btn" data-img-src="assets/pertamina-doc.jpg" data-caption="Arfazzikri Ramadhani — Internship at PT Pertamina Geothermal Energy Tbk">
+                  <div class="exp-photo-slot open-lightbox-btn" data-img-src="assets/pertamina-doc.jpg" data-caption="Arfazzikri Ramadhani — Internship at PT Pertamina Geothermal Energy Tbk" data-aos="fade-up" data-aos-delay="200">
                     <img src="assets/pertamina-doc.jpg" alt="Arfazzikri Ramadhani at PT Pertamina Geothermal Energy Tbk" loading="lazy">
                     <div class="exp-photo-overlay">
                       <span class="exp-photo-caption">🔍 PT Pertamina Geothermal Energy Tbk</span>
@@ -497,7 +491,7 @@
     <section id="projects" class="section">
       <div class="container">
         
-        <div class="section-header-wrap">
+        <div class="section-header-wrap" data-aos="fade-up">
           <div class="section-header-left">
             <span class="section-label">
               <i data-lucide="layers" style="width: 14px; height: 14px;"></i>
@@ -513,7 +507,7 @@
         </div>
 
         <!-- Filter Bar -->
-        <div class="projects-filter-bar" id="projectFilter">
+        <div class="projects-filter-bar" id="projectFilter" data-aos="fade-up">
           <button class="filter-btn active" data-filter="all">All Works</button>
           <button class="filter-btn" data-filter="research">Research &amp; Publications</button>
           <button class="filter-btn" data-filter="cad">CAD &amp; 3D Prototyping</button>
@@ -524,7 +518,7 @@
         <div class="projects-grid" id="projectsGrid">
           
           <!-- Project 1: PROFISIENSI Journal -->
-          <div class="project-card" data-category="research">
+          <div class="project-card" data-category="research" data-aos="fade-up" data-aos-delay="100">
             <div class="project-cover">
               <span class="project-category-badge">Research Publication</span>
               <svg class="project-banner-svg" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -563,7 +557,7 @@
           </div>
 
           <!-- Project 2: 3D-Printed Phone Holder -->
-          <div class="project-card" data-category="cad">
+          <div class="project-card" data-category="cad" data-aos="fade-up" data-aos-delay="200">
             <div class="project-cover">
               <span class="project-category-badge">CAD &amp; 3D Prototyping</span>
               <svg class="project-banner-svg" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -599,7 +593,7 @@
           </div>
 
           <!-- Project 3: Arduino Timer -->
-          <div class="project-card" data-category="hardware">
+          <div class="project-card" data-category="hardware" data-aos="fade-up" data-aos-delay="300">
             <div class="project-cover">
               <span class="project-category-badge">Hardware Prototyping</span>
               <svg class="project-banner-svg" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -647,7 +641,7 @@
     <section id="organization" class="section" style="background: var(--bg-secondary);">
       <div class="container">
         
-        <div class="section-header-wrap">
+        <div class="section-header-wrap" data-aos="fade-up">
           <div class="section-header-left">
             <span class="section-label">
               <i data-lucide="award" style="width: 14px; height: 14px;"></i>
@@ -664,7 +658,7 @@
 
         <div class="org-grid">
           <!-- Org 1: SATURN -->
-          <div class="org-card">
+          <div class="org-card" data-aos="fade-up" data-aos-delay="100">
             <div class="org-header">
               <span class="org-role-badge">Leadership &amp; Community Impact</span>
               <h3 class="org-title">Project Officer — SATURN</h3>
@@ -680,7 +674,7 @@
           </div>
 
           <!-- Org 2: MPM -->
-          <div class="org-card">
+          <div class="org-card" data-aos="fade-up" data-aos-delay="200">
             <div class="org-header">
               <span class="org-role-badge" style="color: var(--accent-emerald); background: var(--accent-emerald-subtle); border-color: rgba(5,150,105,0.2);">Governance &amp; Archiving</span>
               <h3 class="org-title">Administrative Bureau — MPM</h3>
@@ -696,7 +690,7 @@
           </div>
 
           <!-- Org 3: PKKMB-FT -->
-          <div class="org-card">
+          <div class="org-card" data-aos="fade-up" data-aos-delay="300">
             <div class="org-header">
               <span class="org-role-badge">Student Onboarding</span>
               <h3 class="org-title">Secretary — PKKMB-FT</h3>
@@ -712,7 +706,7 @@
           </div>
 
           <!-- Org 4: PORTI -->
-          <div class="org-card">
+          <div class="org-card" data-aos="fade-up" data-aos-delay="400">
             <div class="org-header">
               <span class="org-role-badge" style="color: var(--accent-violet); background: var(--accent-violet-subtle); border-color: rgba(124,58,237,0.2);">Administration &amp; Events</span>
               <h3 class="org-title">Secretary — PORTI</h3>
@@ -737,7 +731,7 @@
     <section id="skills" class="section">
       <div class="container">
         
-        <div class="section-header-wrap">
+        <div class="section-header-wrap" data-aos="fade-up">
           <div class="section-header-left">
             <span class="section-label">
               <i data-lucide="target" style="width: 14px; height: 14px;"></i>
@@ -756,7 +750,7 @@
         <div class="skills-two-col">
           
           <!-- Column 1: Hard Skills -->
-          <div class="skill-box-card">
+          <div class="skill-box-card" data-aos="zoom-in-up" data-aos-delay="100">
             <div class="skill-box-title">
               <i data-lucide="wrench" style="width: 22px; height: 22px; color: var(--accent-blue);"></i>
               <span>Technical &amp; Hard Skills</span>
@@ -814,7 +808,7 @@
           </div>
 
           <!-- Column 2: Soft Skills -->
-          <div class="skill-box-card">
+          <div class="skill-box-card" data-aos="zoom-in-up" data-aos-delay="200">
             <div class="skill-box-title">
               <i data-lucide="users" style="width: 22px; height: 22px; color: var(--accent-emerald);"></i>
               <span>Soft Skills &amp; Domain Expertise</span>
@@ -866,7 +860,7 @@
     <section id="contact" class="section" style="background: var(--bg-secondary);">
       <div class="container">
         
-        <div class="section-header-wrap">
+        <div class="section-header-wrap" data-aos="fade-up">
           <div class="section-header-left">
             <span class="section-label">
               <i data-lucide="send" style="width: 14px; height: 14px;"></i>
@@ -879,7 +873,7 @@
 
         <div class="contact-grid">
           <!-- Info Panel -->
-          <div class="contact-info-panel">
+          <div class="contact-info-panel" data-aos="fade-right" data-aos-delay="100">
             
             <div class="contact-card-box">
               <div class="contact-icon-box">
@@ -919,7 +913,7 @@
           </div>
 
           <!-- Contact Form Card -->
-          <div class="contact-form-card">
+          <div class="contact-form-card" data-aos="fade-left" data-aos-delay="200">
             <form class="contact-form" id="contactForm" novalidate>
               <div class="form-group-row">
                 <div class="form-group">
@@ -1016,6 +1010,17 @@
     <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--accent-emerald);"></i>
     <span id="toastMessage">Action completed!</span>
   </div>
+
+  <!-- AOS (Animate On Scroll) JS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+      easing: 'ease-in-out-cubic'
+    });
+  </script>
 
   <!-- Main JavaScript File -->
   <script src="js/main.js"></script>
