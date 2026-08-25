@@ -124,6 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.style.transform = 'scale(1) translateY(0)';
               }
             });
+            if (typeof AOS !== 'undefined') {
+              AOS.refresh();
+            }
             isFiltering = false;
           }, 30);
         });
@@ -302,10 +305,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 9. Contact Form Handling ---
+  // --- 9. Contact Form Handling (Formspree AJAX Integration) ---
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
@@ -317,7 +320,40 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      window.location.href = `mailto:arfazzikrir@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending...</span>';
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          showToast('Thank you! Your message has been sent successfully.');
+          contactForm.reset();
+        } else {
+          const data = await response.json().catch(() => null);
+          if (data && data.errors && data.errors.length) {
+            showToast(data.errors.map(err => err.message).join(', '));
+          } else {
+            showToast('Oops! There was a problem submitting your form.');
+          }
+        }
+      } catch (error) {
+        // Fallback: submit natively if fetch fails
+        contactForm.submit();
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        initLucide();
+      }
     });
   }
 });
